@@ -78,7 +78,7 @@ La pantalla LCD 16x2 cuenta con múltiples pines para alimentación, control y t
 * **K** = Cátodo de retroiluminación (-)
 
 
-**Se recomienda revisar en detalle el [*datasheet*](/laboratorios/lab02/lcd016n002bcfhet.pdf) de la LCD 16x2**.
+**Se recomienda revisar en detalle el [*datasheet*](/laboratorios/2_lab02/lcd016n002bcfhet.pdf) de la LCD 16x2**.
 
 
 ### CGRAM y caracteres especiales
