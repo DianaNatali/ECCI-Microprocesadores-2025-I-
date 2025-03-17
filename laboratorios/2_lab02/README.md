@@ -17,7 +17,7 @@ Dominar el control básico de una pantalla LCD de 16x2 para visualizar informaci
 
     *  Programa principal (```main.c```) para la lógica de aplicación
 
-Aplicar técnicas de programación embebida para animaciones y actualizaciones dinámicas del display
+  * Aplicar técnicas de programación embebida para animaciones y actualizaciones dinámicas del display
 ## Materiales necesarios:
 
   * Pantalla LCD de 16x2 (modo de 4 bits).
