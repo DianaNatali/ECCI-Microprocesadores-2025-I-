@@ -40,7 +40,7 @@ El microcontrolador de referencia para el curso será el ```PIC18F45K22```, un d
     <td>6-7</td>
     <td> Visualización en pantalla LCD 16x2</td>
     <td><a href="/laboratorios/2_lab02/README.md">lab02</a></td>
-    <td><a href="">Link </a></td>
+    <td><a href="https://classroom.github.com/a/W2b9BSvz">Link </a></td>
     <td>17-21 Mar/2025</td>
   </tr>
 
