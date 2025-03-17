@@ -9,11 +9,15 @@ Dominar el control básico de una pantalla LCD de 16x2 para visualizar informaci
 
   * Diseñar y utilizar caracteres personalizados mediante la gestión de la memoria CGRAM de la LCD.
 
-agrega lo de estrucuturar en .h .c y main.c
+  * Implementar una estructura de código modular organizada en:
 
-New chat
-AI-generated, for reference only
+     * Archivos de cabecera (```.h```) para definiciones y prototipos
 
+    * Módulos fuente (```.c```) para implementación de funciones LCD
+
+    *  Programa principal (```main.c```) para la lógica de aplicación
+
+Aplicar técnicas de programación embebida para animaciones y actualizaciones dinámicas del display
 ## Materiales necesarios:
 
   * Pantalla LCD de 16x2 (modo de 4 bits).
@@ -105,7 +109,23 @@ La CGRAM es una pequeña porción de memoria en la LCD (típicamente $64$ bytes)
 
 ## Conexión con la Blue Pill
 
-![lcdxbluepill](/laboratorios/figs/lab02/lcdxbluepill.png)
+
+### Configuración de pines
+
+| Pin LCD | Función           | Pin PIC18F25K22       |
+|---------|-------------------|-----------------------|
+| VSS     | GND               | GND                   |
+| VDD     | +5V               | VDD                   |
+| VO      | Contraste         | Potenciómetro         |
+| RS      | Registro          | `LATC0`               |
+| RW      | Lectura           | GND (solo escritura)  |
+| E       | Enable            | `LATC1`               |
+| D4      | Dato 4            | `LATC2`               |
+| D5      | Dato 5            | `LATC3`               |
+| D6      | Dato 6            | `LATC4`               |
+| D7      | Dato 7            | `LATC5`               |
+| A       | Retroiluminación+ | +5V con resistor 220Ω |
+| K       | Retroiluminación- | GND                   |
 
 
 ## Procedimiento
