@@ -107,7 +107,7 @@ La CGRAM es una pequeña porción de memoria en la LCD (típicamente $64$ bytes)
     Por ejemplo, si se define un carácter en la ubicación $0$ de la CGRAM, se puede mostrarlo enviando el valor $0$ x $00$ a la LCD.
 
 
-## Conexión con la Blue Pill
+## Conexión con el PIC18F25K22
 
 
 ### Configuración de pines
