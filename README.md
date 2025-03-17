@@ -33,7 +33,7 @@ El microcontrolador de referencia para el curso será el ```PIC18F45K22```, un d
     <td>3-5</td>
     <td>ALU</td>
     <td>lab01</td>
-    <td><a href="https://classroom.github.com/a/jG2akraQ">Link </a></td>
+    <td><a href="https://classroom.github.com/a/Xr02_TG2">Link </a></td>
     <td>10-14 Mar/2025</td>
   </tr>
   <tr>
