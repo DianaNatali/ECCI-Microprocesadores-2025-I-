@@ -13,6 +13,12 @@ Este repositorio contiene los recursos, códigos y documentación utilizados en 
 
 El microcontrolador de referencia para el curso será el ```PIC18F45K22```, un dispositivo ampliamente utilizado en sistemas embebidos debido a sus múltiples periféricos y capacidad de procesamiento.
 
+## Guías y documentación
+
+Para más detalles sobre el microcontrolador utilizado en el curso, consultar la siguiente guía:
+
+- [Guía introducturia al PIC18F45K22 con PICkit 3 y MPLAB X IDE](/tutorials/Tutorial_PIC18F45K22.md)
+
 ## Cronograma
 
 <table>
@@ -32,7 +38,7 @@ El microcontrolador de referencia para el curso será el ```PIC18F45K22```, un d
   <tr>
     <td>3-5</td>
     <td>ALU</td>
-    <td>lab01</td>
+    <td><a href="/laboratorios/1_lab01/Py_0.c">lab01</a></td>
     <td><a href="https://classroom.github.com/a/Xr02_TG2">Link </a></td>
     <td>10-14 Mar/2025</td>
   </tr>
