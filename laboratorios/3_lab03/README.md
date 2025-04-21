@@ -1,4 +1,4 @@
-# Lab03: Generación de PWM con PIC18F45K22
+# Lab03: Generación de señal PWM con PIC18F45K22
 
 ## Objetivos
 
@@ -10,7 +10,7 @@
 
 4. Usar interrupciones de ```Timer0``` para modificar automáticamente el ciclo útil del PWM, demostrando el control dinámico mediante hardware e interrupciones.
 
-5. Leer el valor de un potenciómetro mediante el módulo ADC del microcontrolador y usarlo para ajustar el duty cycle del PWM en tiempo real.
+5. Leer el valor de un potenciómetro mediante el módulo ADC del microcontrolador y usarlo para ajustar el ciclo útil del PWM en tiempo real.
 
 
 ## Materiales
@@ -26,7 +26,7 @@
 
 ## Planteamiento del problema:
 
-Se desea generar una señal PWM con un ciclo de trabajo que aumente automáticamente en pasos, utilizando interrupciones del Timer0. La señal debe observarse mediante un osciloscopio y tener un periodo visible (por ejemplo, 100 ms entre cambios de duty). La frecuencia del sistema debe configurarse con el oscilador interno del PIC a 64 MHz mediante el PLL.
+Se desea generar una señal PWM con un ciclo de trabajo que aumente automáticamente en pasos, utilizando interrupciones del Timer0. La señal debe observarse mediante un osciloscopio y tener un periodo visible (por ejemplo, $100$ ms entre cambios de ciclo útil). La frecuencia del sistema debe configurarse con el oscilador interno del PIC a 64 MHz mediante el PLL.
 
 ## Fundamento Teórico General
 
@@ -59,6 +59,8 @@ $$ f = \dfrac{1}{\text{período}(T)} = \dfrac{1}{f}$$
 <div align="center">
  <img src="/laboratorios/figs/lab03/PWM02.gif" alt="pwm" width="550" />
  </div>
+ 
+ Tomado de **[3]**
 
 
 ### PIC18F45K22 
@@ -69,18 +71,20 @@ El ```PIC18F45K22``` cuenta con un oscilador interno de $16$ MHz que puede ser m
 
 #### Módulo PWM (CCP)
 
-El módulo ```CCP1``` permite generar una señal PWM cuyo periodo se define mediante el registro ```PR2``` y la frecuencia del ```Timer2```. El ciclo útil se ajusta mediante el registro ````CCPR1L```. La fórmula de la frecuencia de la señal PWM es:
+El módulo ```CCP1``` permite generar una señal PWM cuyo periodo se define mediante el registro ```PR2``` y la frecuencia del ```Timer2```. El ciclo útil se ajusta mediante el registro ```CCPR1L```. La fórmula de la frecuencia de la señal PWM es:
 
 $$ f_{PWM} = \dfrac{f_{osc}}{4 \times TMR2_{prescaler} \times (PR2+1)}$$
+
+Se recomienda revisar la documentación [CCP Modules](https://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-assembly/ccp-modules) de Microchip.
 
 
 #### Temporizador 0 e interrupciones
 
-El ```Timer0``` puede configurarse como temporizador de $16$ bits con prescaler para generar interrupciones periódicas. En este laboratorio, se usará para generar eventos cada $100$ ms. Dentro de la interrupción se puede modificar el duty cycle, logrando un control automatizado de la modulación.
+El ```Timer0``` puede configurarse como temporizador de $16$ bits con prescaler para generar interrupciones periódicas. En este laboratorio, se usará para generar eventos cada $100$ ms. Dentro de la interrupción se puede modificar el ciclo útil, logrando un control automatizado de la modulación.
 
 #### ADC y control manual del PWM
 
-El módulo ```ADC``` (*Analog-to-Digital Converter*) permite convertir una señal analógica (como la de un potenciómetro) en un valor digital. Este valor se puede mapear directamente al rango del duty cycle PWM (0 a $255$), permitiendo ajustar la potencia entregada al actuador de forma manual y en tiempo real.
+El módulo ```ADC``` (*Analog-to-Digital Converter*) permite convertir una señal analógica (como la de un potenciómetro) en un valor digital. Este valor se puede mapear directamente al rango del ciclo útil PWM (0 a $255$), permitiendo ajustar la potencia entregada al actuador de forma manual y en tiempo real.
 
 ## Procedimiento
 
@@ -127,7 +131,7 @@ Consiste en configurar el sistema  para operar a $64$ MHz usando el oscilador in
 
         ```
         TRISC2 = 0; // Salida digital
-        ```
+        ```CCP Modules
 
     * Habilitar el modo PWM en el módulo CCP1 a través del registro CCP1CON:
 
@@ -176,23 +180,32 @@ Consiste en configurar el sistema  para operar a $64$ MHz usando el oscilador in
 
 5. Interrupción del ```Timer0```
 
-    * En la ```ISR```, incrementar el *duty cycle* (valor de $0$ a $255$): Implementar la rutina de servicio de interrupción (```ISR```) para actualizar el duty cycle cada $100$ ms:
+    * En la ```ISR```, incrementar el ciclo útil (valor de $0$ a $255$): Implementar la rutina de servicio de interrupción (```ISR```) para actualizar el cada $100$ ms:
 
     * Reiniciar el ```Timer0```.
 
-    * Actualizar ```CCPR1L``` con el nuevo valor de *duty*.
+    * Actualizar ```CCPR1L``` con el nuevo valor de ciclo útil.
 
-6. Medición con el osciloscopio
+
+6. Modularizar el código embebido en:
+
+    * Archivos de cabecera (```.h```) para definiciones y prototipos.
+
+    * Módulos fuente (```.c```) para implementación de funciones PWM y temporizador.
+
+    * Programa principal (```main.c```) para la lógica general del sistema.
+
+7. Medición con el osciloscopio
 
     * Conectar la sonda del osciloscopio al pin ```RC2/CCP1```.
 
-    * Verificar el cambio en el duty cycle cada $100$ ms.
+    * Verificar el cambio en el ciclo útil cada $100$ ms.
 
     * Medir la frecuencia de la señal PWM teóricamente y expermientalmente.
 
     * Calcular el ciclo útil de la señal PWM en diferentes instantes de tiempo.
 
-7. Conectar un led y una resistencia pin ```RC2/CCP1``` para observar el cambio en el brillo debido al cambio en el ciclo útil de la señal y explicar. Tenga en cuenta el diagrama en la sección [Conexiones](#conexiones).
+8. Conectar un led y una resistencia pin ```RC2/CCP1``` para observar el cambio en el brillo debido al cambio en el ciclo útil de la señal y explicar. Tenga en cuenta el diagrama en la sección [Conexiones](#conexiones).
 
 ### Parte 2
 
@@ -256,3 +269,12 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
 en clase las implementaciones de cada una al docente.
 
 2. Realice la respectiva documentación de la implementación llevada a cabo.
+
+
+## Referencias
+            
+[1] [pic-microcontrollers-programming-in-assembly](https://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-assembly)
+
+[2] [CCP Modules](https://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-assembly/ccp-modules).
+
+[3] [Modulación de Ancho de Pulso PWM ](https://mecanicapp.com/modulacion-de-ancho-de-pulso-pwm/)
