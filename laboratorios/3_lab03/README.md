@@ -241,7 +241,7 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
 ### Parte 1: 
 
 <div align="center">
- <img src="/laboratorios/figs/lab03/pwm_pic1.png" alt="pwm" width="550" />
+ <img src="/laboratorios/figs/lab03/pwm_pic1.png" alt="pwm" width="600" />
  </div>
 
 
@@ -249,7 +249,7 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
 
 
 <div align="center">
- <img src="/laboratorios/figs/lab03/pwm_pic.png" alt="pwm" width="550" />
+ <img src="/laboratorios/figs/lab03/pwm_pic.png" alt="pwm" width="700" />
  </div>
 
        
