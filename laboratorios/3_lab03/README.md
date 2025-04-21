@@ -50,7 +50,7 @@ $$ f = \dfrac{1}{\text{período}(T)} = \dfrac{1}{f}$$
  El ciclo de trabajo es el porcentaje del tiempo durante el cual la señal permanece en un nivel alto (encendida) durante un ciclo. Se calcula como la fracción del tiempo en que la señal está en estado alto con respecto al tiempo total del ciclo.
 
 
- $$ \text{Ciclo de trabajo}() = \dfrac{\text{Tiempo en alto}}{\text{Período} (T)} \times 100 $$
+ $$ \text{Ciclo de trabajo} = \dfrac{\text{Tiempo en alto}}{\text{Período} (T)} \times 100 $$  
 
 
 3. **Frecuencia y ciclo de trabajo**: La frecuencia y el ciclo de trabajo están relacionados, pero son independientes en cuanto al control. Mientras que la frecuencia controla cuántos ciclos se repiten por segundo, el ciclo de trabajo controla la cantidad de tiempo que la señal permanece "encendida" dentro de cada ciclo.
@@ -86,7 +86,7 @@ El módulo ```ADC``` (*Analog-to-Digital Converter*) permite convertir una seña
 
 ### Parte 1: 
 
-Consiste en condigurar el sistema  para operar a $64$ MHz usando el oscilador interno con PLL. Se habilita el módulo ```CCP1``` para generar PWM y se configura el ```Timer0``` con interrupciones para modificar periódicamente el ciclo útil.
+Consiste en configurar el sistema  para operar a $64$ MHz usando el oscilador interno con PLL. Se habilita el módulo ```CCP1``` para generar PWM y se configura el ```Timer0``` con interrupciones para modificar periódicamente el ciclo útil.
 
 #### Pasos:
 
@@ -182,7 +182,7 @@ Consiste en condigurar el sistema  para operar a $64$ MHz usando el oscilador in
 
     * Actualizar ```CCPR1L``` con el nuevo valor de *duty*.
 
-5. Medición con el osciloscopio
+6. Medición con el osciloscopio
 
     * Conectar la sonda del osciloscopio al pin ```RC2/CCP1```.
 
@@ -191,6 +191,8 @@ Consiste en condigurar el sistema  para operar a $64$ MHz usando el oscilador in
     * Medir la frecuencia de la señal PWM teóricamente y expermientalmente.
 
     * Calcular el ciclo útil de la señal PWM en diferentes instantes de tiempo.
+
+7. Conectar un led y una resistencia pin ```RC2/CCP1``` para observar el cambio en el brillo debido al cambio en el ciclo útil de la señal y explicar. Tenga en cuenta el diagrama en la sección [Conexiones](#conexiones).
 
 ### Parte 2
 
@@ -232,6 +234,24 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
     __delay_ms(50);
     }
     ```
+
+### Conexiones:
+
+
+### Parte 1: 
+
+<div align="center">
+ <img src="/laboratorios/figs/lab03/pwm_pic1.png" alt="pwm" width="550" />
+ </div>
+
+
+### Parte 2: 
+
+
+<div align="center">
+ <img src="/laboratorios/figs/lab03/pwm_pic.png" alt="pwm" width="550" />
+ </div>
+
        
 
 ## Entregables
