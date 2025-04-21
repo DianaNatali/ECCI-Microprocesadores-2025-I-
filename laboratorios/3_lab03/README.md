@@ -35,7 +35,7 @@ Se desea generar una señal PWM con un ciclo de trabajo que aumente automáticam
 PWM (*Pulse Width Modulation*) o Modulación por Ancho de Pulsos es una técnica ampliamente utilizada para controlar la potencia entregada a dispositivos eléctricos mediante la variación del ancho de los pulsos en una señal digital de alta frecuencia. Esta modulación se utiliza para controlar la cantidad de energía que se suministra a una carga, como un motor, un LED o incluso en sistemas de regulación de voltaje.
 
 <div align="center">
- <img src="/laboratorios/figs/lab03/pwm.png" alt="pwm" width="500" />
+ <img src="/laboratorios/figs/lab03/pwm.png" alt="pwm" width="600" />
 </div>
 
 
@@ -57,7 +57,7 @@ $$ f = \dfrac{1}{\text{período}} = \dfrac{1}{f}$$
 
 
 <div align="center">
- <img src="/laboratorios/figs/lab03/PWM02.gif" alt="pwm" width="500" />
+ <img src="/laboratorios/figs/lab03/PWM02.gif" alt="pwm" width="550" />
  </div>
 
 
