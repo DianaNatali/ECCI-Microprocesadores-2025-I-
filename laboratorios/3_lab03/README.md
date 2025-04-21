@@ -44,13 +44,13 @@ PWM (*Pulse Width Modulation*) o Modulación por Ancho de Pulsos es una técnica
 1. **Frecuencia**:
 Es la cantidad de ciclos completos de la señal por segundo. La frecuencia de la señal PWM determina cuántos pulsos por segundo se envían al dispositivo. La frecuencia es importante porque debe ser alta lo suficiente como para que el ojo humano no perciba el parpadeo o el zumbido de los dispositivos, como un LED o un motor. Sin embargo, debe ser lo suficientemente baja como para no generar interferencia o ruido eléctrico.
 
-$$ f = \dfrac{1}{\text{período}} = \dfrac{1}{f}$$
+$$ f = \dfrac{1}{\text{período}(T)} = \dfrac{1}{f}$$
 
 2. **Ciclo de trabajo (Duty Cycle)**:
  El ciclo de trabajo es el porcentaje del tiempo durante el cual la señal permanece en un nivel alto (encendida) durante un ciclo. Se calcula como la fracción del tiempo en que la señal está en estado alto con respecto al tiempo total del ciclo.
 
 
- $$ \text{Ciclo de trabajo}() = \dfrac{\text{Tiempo en alto}}{\text{Período} \Big(T = \dfrac{1}{f}\Big)} \times 100 $$
+ $$ \text{Ciclo de trabajo}() = \dfrac{\text{Tiempo en alto}}{\text{Período} (T)} \times 100 $$
 
 
 3. **Frecuencia y ciclo de trabajo**: La frecuencia y el ciclo de trabajo están relacionados, pero son independientes en cuanto al control. Mientras que la frecuencia controla cuántos ciclos se repiten por segundo, el ciclo de trabajo controla la cantidad de tiempo que la señal permanece "encendida" dentro de cada ciclo.
