@@ -50,7 +50,7 @@ $$ f = \dfrac{1}{\text{período}(T)} = \dfrac{1}{f}$$
  El ciclo de trabajo es el porcentaje del tiempo durante el cual la señal permanece en un nivel alto (encendida) durante un ciclo. Se calcula como la fracción del tiempo en que la señal está en estado alto con respecto al tiempo total del ciclo.
 
 
- $$ \text{Ciclo de trabajo}() = \dfrac{\text{Tiempo en alto}}{\text{Período} (T)} \times 100 $$
+ $$ \text{Ciclo de trabajo(\%)} = \dfrac{\text{Tiempo en alto}}{\text{Período} (T)} \times 100 $$
 
 
 3. **Frecuencia y ciclo de trabajo**: La frecuencia y el ciclo de trabajo están relacionados, pero son independientes en cuanto al control. Mientras que la frecuencia controla cuántos ciclos se repiten por segundo, el ciclo de trabajo controla la cantidad de tiempo que la señal permanece "encendida" dentro de cada ciclo.
