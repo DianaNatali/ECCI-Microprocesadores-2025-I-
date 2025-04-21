@@ -49,6 +49,13 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="https://classroom.github.com/a/W2b9BSvz">Link </a></td>
     <td>17-21 Mar/2025</td>
   </tr>
+  <tr>
+    <td>8-9</td>
+    <td>  PWM controlado por Timer0 con Interrupciones</td>
+    <td><a href="/laboratorios/3_lab03/README.md">lab03</a></td>
+    <td><a href="https://classroom.github.com/a/W2b9BSvz">Link </a></td>
+    <td>17-21 Mar/2025</td>
+  </tr>
 
 
 </table>
