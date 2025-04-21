@@ -53,7 +53,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td>8-9</td>
     <td> Generación de PWM</td>
     <td><a href="/laboratorios/3_lab03/README.md">lab03</a></td>
-    <td><a href="https://classroom.github.com/a/W2b9BSvz">Link </a></td>
+    <td><a href="">Link </a></td>
     <td>17-21 Mar/2025</td>
   </tr>
 
