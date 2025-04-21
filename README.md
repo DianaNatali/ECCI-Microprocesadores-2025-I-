@@ -37,7 +37,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   </tr>
   <tr>
     <td>3-5</td>
-    <td>ALU</td>
+    <td>ALU*</td>
     <td><a href="/laboratorios/1_lab01/Py_0.c">lab01</a></td>
     <td><a href="https://classroom.github.com/a/Xr02_TG2">Link </a></td>
     <td>10-14 Mar/2025</td>
@@ -57,8 +57,10 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td>17-21 Mar/2025</td>
   </tr>
 
-
 </table>
+
+  *Propuesto por el profesor Andrés Torres
+
 
 
 
