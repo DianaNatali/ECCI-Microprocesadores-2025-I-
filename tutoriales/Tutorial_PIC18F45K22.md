@@ -1,10 +1,10 @@
-Guía del PIC18F45K22 con PICkit 3 y MPLAB X IDE
+# Guía introductoria del PIC18F45K22 con PICkit 3 y MPLAB X IDE
 
-1. Introducción
+## 1. Introducción
 
-El PIC18F45K22 es un microcontrolador de 8 bits de Microchip con una frecuencia de operación de hasta 64 MHz y 35 pines de entrada/salida. Esta guía te guiará a través de la programación del PIC18F45K22 usando MPLAB X IDE, el compilador XC8 y el programador PICkit 3.
+El ```PIC18F45K22``` es un microcontrolador de 8 bits de Microchip con una frecuencia de operación de hasta 64 MHz y 35 pines de entrada/salida. Esta guía te guiará a través de la programación del PIC18F45K22 usando MPLAB X IDE, el compilador XC8 y el programador PICkit 3.
 
-2. Arquitectura del PIC18F45K22
+## 2. Arquitectura del PIC18F45K22
 
 El PIC18F45K22 utiliza una arquitectura Harvard con memoria de programa y datos separadas. Su estructura interna incluye:
 

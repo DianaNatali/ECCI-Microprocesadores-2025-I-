@@ -56,6 +56,14 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="https://classroom.github.com/a/hI8UvgWt">Link </a></td>
     <td>17-21 Mar/2025</td>
   </tr>
+  <td>9-12</td>
+    <td> Proyecto</td>
+    <td>1ra. entrega</td>
+    <td><a href=" https://classroom.github.com/a/BF7zWEn5">Link </a></td>
+    <td>23 Abr/2025</td>
+  </tr>
+
+ 
 
 </table>
 
