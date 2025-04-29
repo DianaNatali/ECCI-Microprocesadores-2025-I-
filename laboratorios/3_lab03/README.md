@@ -221,30 +221,27 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
 
 2. Configurar ADC:
     ```
-    void setupADC(void) {
-    TRISA0 = 1;       // RA0 como entrada
-    ANSELA0 = 1;      // Habilita analógico en RA0
-    ADCON0 = 0b00000001; // Selecciona canal AN0, ADC ON
-    ADCON1 = 0b00000000; // Vref+ = VDD, Vref- = VSS
-    ADCON2 = 0b10111110; // Justificado a la derecha, Tacq, Fosc/64
+    void ADC_Init(void) {
+        ADCON0 = 0x01;     
+        ADCON1 = 0x0E;     
+        ADCON2 = 0xA9;    
     }
     ```
     ```
-    unsigned int readADC(void) {
-        ADCON0bits.GO = 1; // Inicia conversión
-        while (ADCON0bits.GO); // Espera
-        return ((ADRESH << 8) + ADRESL); // Resultado 10 bits
-    }
+    uint16_t ADC_Read(void) {
+        ADCON0bits.GO = 1;              
+        while (ADCON0bits.GO);          
+        return ((uint16_t)(ADRESH << 8) | ADRESL); 
+    }   
     ```
 
 3. En el ```main```, reemplazar el incremento del ciclo útil por la lectura del valor del ADC para ajustar el ciclo útil del PWM de manera dinámica según el valor analógico recibido:
 
     ```
-    while (1) {
-    unsigned int adc = readADC();
-    duty = adc >> 2;       // Convertir 10 bits a 8 bits
-    setDuty(duty);
-    __delay_ms(50);
+    while (1){
+        uint16_t pot_value = ADC_Read();
+        setDuty(pot_value);        
+        __delay_ms(10);
     }
     ```
 
