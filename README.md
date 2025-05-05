@@ -56,11 +56,26 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="https://classroom.github.com/a/hI8UvgWt">Link </a></td>
     <td>17-21 Mar/2025</td>
   </tr>
-  <td>9-12</td>
+   <tr>
+  <td>9-10</td>
     <td> Proyecto</td>
     <td>1ra. entrega</td>
     <td><a href="https://classroom.github.com/a/BF7zWEn5">Link </a></td>
     <td>23 Abr/2025</td>
+  </tr>
+   <tr>
+  <td>11-12</td>
+    <td> LCD + ADC</td>
+    <td>lab04</td>
+    <td> </a></td>
+    <td>05 May/2025</td>
+  </tr>
+  <tr>
+  <td>13-14</td>
+    <td> UART</td>
+    <td><a href="/laboratorios/4_lab04/README.md">lab04</a></td>
+    <td><a href="">Link </a></td>
+    <td>12 May/2025</td>
   </tr>
 
  
