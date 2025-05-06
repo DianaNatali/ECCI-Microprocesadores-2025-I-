@@ -5,7 +5,7 @@ En este laboratorio nos enfocaremos en la instalación y configuración de las h
 Índice:
 
 1. [Visual Studio Code](#1-visual-studio-code)
-2. [Git/Githuv](#2-git-y-github)
+2. [Git/Github](#2-git-y-github)
 
 
 
