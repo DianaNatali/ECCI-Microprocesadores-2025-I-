@@ -169,6 +169,45 @@ A continuación se enliastan algunos parámetros relevantes:
 8. Habilitación del noveno bit (```TXSTA_bit6_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
 9. Habilitación de interrupción de transmisión (```PIE1_bit4_R/W```): 1&rarr;Habilitado, 0&rarr; Deshabilitado.
 10. Flag de interrupción de transmisión (```PIR1_bit4_R/W```): 1&rarr;Buffer de datos vacío, 0&rarr; Deshabilitado.
+
+
+### Verificación con monitor serial
+
+Para observar los datos enviados por el PIC a través de UART, se debe usar un monitor serial. Aquí hay dos opciones comunes:
+
+* Opción 1: Usar PuTTY (Windows/Linux)
+
+    * Descargar PuTTY desde https://www.putty.org.
+
+    * Conectar el PIC al PC a través del conversor serial
+
+    * Abrir PuTTY y seleccione:
+
+        * Connection type: Serial
+
+        * Serial line: (ej. COM3 en Windows, /dev/ttyUSB0 en Linux)
+
+        * Speed (baud): 9600
+
+    * Hacer clic en Open. Deberías ver los mensajes enviados por el PIC.
+
+* Opción 2: Usar CuteCom (Linux)
+
+    * Intalar con:
+
+        ```
+        sudo apt install cutecom
+        ```
+
+    * Ejecutar cutecom y selecciona el puerto correcto (/dev/ttyUSB0 o similar).
+
+    * Configurar a 9600 baudios, 8 bits, sin paridad, 1 bit de parada.
+
+    * Hacer clic en Open.
+
+* Opción 3: Usar un Arduino
+
+ Puedes utilizar el monitor serial de la IDE de Arduino.
         
 ### Conexiones:
 <div align="center">
