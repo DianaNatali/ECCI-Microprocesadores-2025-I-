@@ -30,14 +30,14 @@
 El módulo **EUSART** (Enhanced Universal Synchronous Asynchronous Receiver Transmitter) del ```PIC18F45K22``` permite la comunicación serial tanto síncrona como asíncrona. En este laboratorio se usará en modo asíncrono (**UART**), que no requiere señal de reloj adicional y es muy común para comunicación con PCs u otros dispositivos.
 
 <div align="center">
- <img src="/laboratorios/figs/lab04/uart_usart.png" alt="uart" width="650" />
+ <img src="/laboratorios/figs/lab04/uart_usart.png" alt="uart" width="550" />
  </div>
 
 
 &rarr; **UART (Universal Asynchronous Receiver/Transmitter)**: es un protocolo de comunicación serial utilizado para la transmisión de datos de forma asíncrona, es decir, sin necesidad de una señal de reloj externa. En un sistema UART, dos dispositivos se comunican a través de dos líneas: ```TX``` (transmisión) y ```RX``` (recepción), como se muestra en el siguiente diagrama. El  ```PIC18F45K22``` tiene un modo UART que se puede configurar para transmitir y recibir datos en serie. 
 
 <div align="center">
- <img src="/laboratorios/figs/lab04/uart_diagram.png" alt="uart" width="550" />
+ <img src="/laboratorios/figs/lab04/uart_diagram.png" alt="uart" width="450" />
  </div>
 
 
