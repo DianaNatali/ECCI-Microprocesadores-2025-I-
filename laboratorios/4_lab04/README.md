@@ -37,7 +37,7 @@ UART (Universal Asynchronous Receiver/Transmitter) es un protocolo de comunicaci
 
     El módulo UART en el ```PIC18F45K22``` debe configurarse para transmitir y recibir datos a una velocidad de 9600 bps. El valor de la constante de baudios (```SPBRG```) debe calcularse según la fórmula:
 
-    $$ SPBRG=\frac{F_{osc}}{64×Baudrate}−1$$
+    $$SPBRG=\frac{F_{osc}}{64×Baudrate}−1$$
 
     Para un oscilador de $64$ MHz y un baudrate de $9600$, el valor de ```SPBRG``` es $25$.
 
