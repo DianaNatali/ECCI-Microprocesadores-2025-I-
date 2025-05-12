@@ -67,7 +67,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   <td>11-12</td>
     <td> LCD + ADC</td>
     <td>lab04</td>
-    <td> </a></td>
+    <td> -</td>
     <td>05 May/2025</td>
   </tr>
   <tr>
