@@ -74,7 +74,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   <td>13-14</td>
     <td> UART</td>
     <td><a href="/laboratorios/4_lab04/README.md">lab04</a></td>
-    <td><a href="">Link </a></td>
+    <td><a href="https://classroom.github.com/a/W4ROtdcl">Link </a></td>
     <td>12 May/2025</td>
   </tr>
 
