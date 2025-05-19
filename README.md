@@ -44,14 +44,14 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   </tr>
   <tr>
     <td>6-7</td>
-    <td> Visualización en pantalla LCD 16x2</td>
+    <td> Pantalla LCD 16x2</td>
     <td><a href="/laboratorios/2_lab02/README.md">lab02</a></td>
     <td><a href="https://classroom.github.com/a/W2b9BSvz">Link </a></td>
     <td>17-21 Mar/2025</td>
   </tr>
   <tr>
     <td>8-9</td>
-    <td> Generación de PWM</td>
+    <td> PWM</td>
     <td><a href="/laboratorios/3_lab03/README.md">lab03</a></td>
     <td><a href="https://classroom.github.com/a/hI8UvgWt">Link </a></td>
     <td>17-21 Mar/2025</td>
@@ -84,6 +84,14 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="https://classroom.github.com/a/Eivj-ZHC">Link </a></td>
     <td>12 May/2025</td>
   </tr>
+  <td>15</td>
+    <td> I2C</td>
+    <td>lab05</td>
+    <td><a href="https://classroom.github.com/a/mu7Id-K7">Link </a></td>
+    <td>19 May/2025</td>
+  </tr>
+
+
 
  
 
