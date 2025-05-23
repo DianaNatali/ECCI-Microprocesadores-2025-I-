@@ -90,6 +90,14 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="https://classroom.github.com/a/mu7Id-K7">Link </a></td>
     <td>19 May/2025</td>
   </tr>
+  <td>16</td>
+    <td> Proyecto</td>
+    <td>Entrega final</td>
+    <td><a href="https://classroom.github.com/a/mWaf5ja9">Link </a></td>
+    <td>26 May/2025</td>
+  </tr>
+
+
 
 
 
